@@ -1,0 +1,73 @@
+.NavBar {
+  height: 80px;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavBar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.NavBar nav ul li {
+  display: inline-block;
+  margin: 20px;
+}
+.NavBar nav ul li a {
+  font-size: var(--fontsize-s);
+  text-decoration: none;
+  color: var(--link-color);
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.NavBar a:hover {
+  border: 1px solid var(--link-hover-color);
+  background-color: var(--link-hover-color);
+  padding: 10px;
+  border-radius: 20px;
+  color: var(--link-hover-color);
+  transition: 0.5s;
+}
+
+.NavBar .MobileNavigation {
+  display: none;
+}
+@media (max-width: 990px) {
+  .NavBar .Navigation {
+    display: none;
+  }
+  .NavBar .MobileNavigation {
+    display: flex;
+    align-items: center;
+    transition: 1s;
+  }
+  .NavBar .MobileNavigation .Hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    outline: none;
+  }
+  .NavBar nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    background: rgba(24, 24, 24, 0.961);
+    border-top: 2px solid #844333;
+    border-bottom: 2px solid #844333;
+  }
+  .NavBar {
+  }
+  .NavBar a:hover {
+    border-bottom: none;
+    color: var(--link-hover-color);
+  }
+}
