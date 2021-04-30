@@ -18,7 +18,7 @@
   display: inline-block;
   margin: 20px;
 }
-.NavBar nav ul li a {
+.NavBar nav ul a {
   font-size: var(--fontsize-s);
   text-decoration: none;
   color: var(--link-color);
@@ -26,11 +26,10 @@
 }
 
 .NavBar a:hover {
-  border: 1px solid var(--link-hover-color);
   background-color: var(--link-hover-color);
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 20px;
-  color: var(--link-hover-color);
+  color: var(--link-color);
   transition: 0.5s;
 }
 

@@ -1,13 +1,31 @@
 import React from 'react';
 import classes from './NavBar.module.css'
+import Link from 'next/link'
 
 const NavLinks = (props) => {
     return (
         <ul>
-            <li onClick={() => props.isMobile && props.closeMobileMenu()}><a href="/">Home</a></li>
-            <li onClick={() => props.isMobile && props.closeMobileMenu()}><a href="/about">About</a></li>
-            <li onClick={() => props.isMobile && props.closeMobileMenu()}><a href="/services">Services</a></li>
-            <li onClick={() => props.isMobile && props.closeMobileMenu()}><a href="/contact">Contact</a></li>
+
+            <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+                <Link href="/">
+                    <a>Home</a>
+                </Link>
+            </li>
+            <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+                <Link href="/liveVideo">
+                    <a>Live Video</a>
+                </Link>
+            </li>
+            <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+                <Link href="/services">
+                    <a>Services</a>
+                </Link>
+            </li>
+            <li onClick={() => props.isMobile && props.closeMobileMenu()}>
+                <Link href="/contact">
+                    <a>Contact</a>
+                </Link>
+            </li>
         </ul>
     );
 }

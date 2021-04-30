@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import Videojs from './Video.js';
+import style from '../styles/Home.module.css'
 
 const videoJsOptions = {
     autoplay: true,
-    fluid: false,
+    fluid: true,
     controls: true,
     sources: [
         {
@@ -15,11 +16,10 @@ const videoJsOptions = {
 
 export default function Home() {
     return (
-        <main>
+        <main className={style.container}>
             <h1> Live Video </h1>
-            <div >
+            <div className={style.videoBox}>
                 <Videojs {...videoJsOptions} />
-
             </div>
             <Link href="/">
                 <a>Go Back</a>

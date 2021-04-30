@@ -41,7 +41,7 @@ const Requests = () => {
         <div className={style.container}>
             {posts.map(result => {
 
-                const { id, track, artist, contact, comment } = result;
+                const { id, track, artist, contact, comment, location } = result;
 
                 return (
                     <div className={style.requestBox} key={id}>
@@ -49,6 +49,7 @@ const Requests = () => {
                         <h5>Artist : {artist}</h5>
                         <h5>Comment : {comment}</h5>
                         <h5>Contact Name : {contact}</h5>
+                        <h5>Contact Name : {location}</h5>
                         <button onClick={() => removeData(id)}>Delete Request</button>
                     </div>
 
