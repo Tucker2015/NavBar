@@ -7,6 +7,7 @@ const NavBar = () => {
     return (
 
         <div className={classes.NavBar}>
+            <div className={classes.logo}>Station Request Site</div>
             <MobileNavigation />
             <Navigation />
         </div>

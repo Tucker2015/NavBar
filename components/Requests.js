@@ -32,17 +32,13 @@ const Requests = () => {
         const interval = setInterval(() => {
             getPosts()
         }, 500)
-
-
         return () => clearInterval(interval)
     }, [])  // includes empty dependency array
 
     return (
-        <div className={style.container}>
+        <div className={style.requestCard}>
             {posts.map(result => {
-
-                const { id, track, artist, contact, comment, location } = result;
-
+                const { id, track, artist, contact, comment, location, station, } = result;
                 return (
                     <div className={style.requestBox} key={id}>
                         <h5>Track : {track}</h5>
@@ -50,6 +46,7 @@ const Requests = () => {
                         <h5>Comment : {comment}</h5>
                         <h5>Contact Name : {contact}</h5>
                         <h5>Contact Name : {location}</h5>
+                        <h5>Station : {station.stationID}</h5>
                         <button onClick={() => removeData(id)}>Delete Request</button>
                     </div>
 

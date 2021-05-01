@@ -2,11 +2,20 @@
   height: 80px;
   width: 100%;
   position: relative;
-  z-index: 999;
-  opacity: 0.9;
+  opacity: 1;
   display: flex;
-  justify-content: center;
+  padding: 10px;
+  justify-content: space-between;
   align-items: center;
+  z-index: 999;
+}
+.NavBar .logo {
+  font-size: var(--fontsize-l);
+  color: var(--header-color);
+  text-shadow: var(--text-shadow-heavy);
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 .NavBar nav ul {
   list-style: none;
@@ -19,49 +28,53 @@
   margin: 20px;
 }
 .NavBar nav ul a {
-  font-size: var(--fontsize-s);
+  font-size: var(--fontsize-links);
   text-decoration: none;
   color: var(--link-color);
   text-shadow: 2px 2px 5px #000000;
 }
 
 .NavBar a:hover {
-  background-color: var(--link-hover-color);
-  padding: 10px 20px;
-  border-radius: 20px;
+  border-bottom: 4px solid var(--link-color);
   color: var(--link-color);
-  transition: 0.5s;
 }
 
 .NavBar .MobileNavigation {
   display: none;
 }
 @media (max-width: 990px) {
+  .NavBar .logo {
+    font-size: var(--fontsize-m);
+  }
   .NavBar .Navigation {
     display: none;
+    transition: 0.5s ease-out;
   }
   .NavBar .MobileNavigation {
     display: flex;
     align-items: center;
-    transition: 1s;
+    transition: 0.5s ease-in-out;
   }
   .NavBar .MobileNavigation .Hamburger {
     position: absolute;
     right: 5%;
     cursor: pointer;
     outline: none;
+    color: #f9f9f9;
+    z-index: 999;
   }
   .NavBar nav ul {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 0px;
     right: 0;
     width: 100%;
+    height: 100vh;
+    justify-content: center;
     align-items: center;
-    background: rgba(24, 24, 24, 0.961);
-    border-top: 2px solid #844333;
-    border-bottom: 2px solid #844333;
+    background: rgb(0, 0, 24);
+    transition: 0.5s ease-in-out;
   }
   .NavBar {
   }

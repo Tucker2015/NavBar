@@ -5,7 +5,6 @@ import Link from 'next/link'
 const NavLinks = (props) => {
     return (
         <ul>
-
             <li onClick={() => props.isMobile && props.closeMobileMenu()}>
                 <Link href="/">
                     <a>Home</a>

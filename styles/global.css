@@ -6,8 +6,10 @@
   --header-color: rgb(233, 222, 222);
   --font-m: 20px;
   --fontsize-s: 1rem;
-  --fontsize-m: 2.2rem;
-  --fontsize-l: 4rem;
+  --fontsize-m: 1.5rem;
+  --fontsize-links: 1.1rem;
+  --fontsize-mr: 1rem;
+  --fontsize-l: 2rem;
   --fontsize-xl: 6rem;
   --text-shadow-heavy: 2px 2px 5px hsl(0, 0%, 0%);
   --text-shadow-light: 2px 2px 5px hsl(0, 0%, 40%);

@@ -5,6 +5,42 @@
   align-items: center;
   justify-content: center;
 }
+
+.requestCard {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.requestBox {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 10px;
+  padding: 10px 50px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #222;
+  align-items: center;
+}
+.requestBox h5 {
+  font-size: var(--fontsize-s);
+  color: var(--header-color);
+}
+.requestBox button {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fontsize-s);
+  color: var(--link-color);
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(0, 100%, 40%);
+  height: 40px;
+  width: 150px;
+}
 .container h1 {
   color: var(--header-color);
   font-size: var(--fontsize-l);
@@ -29,36 +65,19 @@
   .container h1 {
     font-size: var(--fontsize-m);
   }
+  .requestBox {
+    width: 100%;
+    max-width: 600px;
+    padding: 5px 0;
+  }
+  .requestBox h5 {
+    font-size: var(--fontsize-mr);
+  }
+  .requestCard {
+    margin: 10px;
+  }
 }
-.requestBox {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  margin: 10px;
-  padding: 10px 50px;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  background-color: #222;
-  align-items: center;
-}
-.requestBox h5 {
-  font-size: var(--fontsize-s);
-  color: var(--header-color);
-}
-.requestBox button {
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--fontsize-s);
-  color: var(--link-color);
-  font-weight: 700;
-  border-radius: 20px;
-  border: none;
-  background-color: red;
-  height: 40px;
-  width: 150px;
-}
+
 .videoBox {
   position: relative;
   justify-content: center;
